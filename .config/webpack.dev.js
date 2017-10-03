@@ -27,6 +27,12 @@ module.exports = function () {
       chunkFilename: "[id].[chunkhash].bundle.js"
     },
 
+    resolve: {
+      alias: {
+        components: path.resolve('./src/components')
+      }
+    },
+
     module: {
       rules: [
         // -----------------------------------------------------------------------------------------------------
