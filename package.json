@@ -3,7 +3,7 @@
   "version": "0.0.1-alpha1",
   "description": "A simple MovieDB finder",
   "main": "index.js",
-  "repository": "https://github.com/npsr/movie-finder.git",
+  "repository": "https://github.com/npsr/ES6-WebStarter.git",
   "author": "Luke Samorodny",
   "license": "MIT",
   "scripts": {
