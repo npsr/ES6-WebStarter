@@ -1,5 +1,11 @@
-const pack = require('../package.json');
-const homeTpl = require('components/home/home.pug');
+import css from 'template/styles.scss';
+
+import Helpers  from 'shared/helpers';
+import pack     from '../package.json';
+import homeTpl  from 'components/home/home.pug';
+
+const helpers = new Helpers();
+helpers.addCSS(css);
 
 console.info('Welcome to ' + pack.name + ', version:' + pack.version);
 document.querySelector('#root').innerHTML = homeTpl;

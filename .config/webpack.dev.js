@@ -29,7 +29,9 @@ module.exports = function () {
 
     resolve: {
       alias: {
-        components: path.resolve('./src/components')
+        components:   path.resolve('./src/components'),
+        template:     path.resolve('./src/components/shared/template'),
+        shared:       path.resolve('./src/components/shared')
       }
     },
 
