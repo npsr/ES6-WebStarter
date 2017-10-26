@@ -1,6 +1,6 @@
 {
   "name": "ES6-WebStarter",
-  "version": "0.0.1-alpha1",
+  "version": "0.0.1-alpha2",
   "description": "A simple MovieDB finder",
   "main": "index.js",
   "repository": "https://github.com/npsr/ES6-WebStarter.git",
