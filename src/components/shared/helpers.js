@@ -8,6 +8,10 @@ class Helpers {
     style.innerHTML = css;
     document.querySelector('head').appendChild(style);
   }
-};
+
+  addHTML(target, content) {
+    document.querySelector(target).innerHTML = content;
+  }
+}
 
 export default Helpers;
