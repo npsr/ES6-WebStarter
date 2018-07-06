@@ -1,9 +1,9 @@
 {
-  "name": "ES6-WebStarter",
-  "version": "0.0.1-alpha2",
-  "description": "A simple MovieDB finder",
+  "name": "ES6webstarter",
+  "version": "0.0.1-alpha3",
+  "description": "Just another starter pack for Pure ES6",
   "main": "index.js",
-  "repository": "https://github.com/npsr/ES6-WebStarter.git",
+  "repository": "",
   "author": "Luke Samorodny",
   "license": "MIT",
   "scripts": {
@@ -15,6 +15,8 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "css-loader": "^0.28.7",
+    "eslint": "^4.17.0",
+    "eslint-loader": "^1.9.0",
     "html-webpack-plugin": "^2.30.1",
     "node-sass": "^4.5.3",
     "pug": "^2.0.0-rc.4",
@@ -25,5 +27,8 @@
     "to-string-loader": "^1.1.5",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
+  },
+  "dependencies": {
+    "aviator": "^0.6.6"
   }
 }

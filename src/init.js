@@ -1,12 +1,11 @@
-import css      from 'template/styles.scss';
-
 import Helpers  from 'shared/helpers';
-import pack     from '../package.json';
-import homeTpl  from 'components/home/home.pug';
+import Pack     from '../package.json';
+import Routes   from './routes.js';
 
-const helpers = new Helpers();
+import templateCSS from 'template/styles.scss';
 
-helpers.addCSS(css);
-helpers.addHTML('#root', homeTpl);
+Helpers.addCSS(templateCSS);
 
-console.info('Welcome to ' + pack.name + ', version:' + pack.version);
+new Routes();
+
+console.info('Welcome to ' + Pack.name + ', version:' + Pack.version);
