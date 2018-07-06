@@ -1,0 +1,26 @@
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  height: 100vh;
+
+  .home {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    font-size: 2em;
+
+    a {
+      color: rgba(66, 134, 244, .8);
+      transition: all .3s;
+
+      &:hover {
+        background: rgba(66, 134, 244, 100);
+        color: #fff;
+      }
+    }
+  }
+}

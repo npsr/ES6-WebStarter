@@ -8,7 +8,10 @@ class Helpers {
   }
 
   static addHTML(target, content) {
-    document.querySelector(target = '#root').innerHTML = content;
+    document.querySelector(target || '#root').innerHTML = content;
+  }
+  static addIMG(target, src) {
+      document.querySelector(target).src = src;
   }
 }
 

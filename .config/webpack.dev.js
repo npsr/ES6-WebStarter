@@ -22,6 +22,7 @@ module.exports = function () {
     },
 
     output: {
+      publicPath: '/',
       path: __dirname + "/dist",
       filename: '[hash]__' + pack.name + '-v.' + pack.version + '.bundle.js',
       chunkFilename: "[id].[chunkhash].bundle.js"
@@ -31,7 +32,8 @@ module.exports = function () {
       alias: {
         components:   path.resolve('./src/components'),
         template:     path.resolve('./src/components/shared/template'),
-        shared:       path.resolve('./src/components/shared')
+        shared:       path.resolve('./src/components/shared'),
+        images:       path.resolve('./public/img')
       }
     },
 
@@ -73,12 +75,21 @@ module.exports = function () {
         // -----------------------------------------------------------------------------------------------------
         {
           test: /\.(jpg|png|gif)$/,
-          use: 'file-loader'
+          include : path.join(__dirname, 'app'),
+          use: ['file-loader',
+            {
+                loader: 'image-webpack-loader',
+                options: {
+                    disable: true,
+                },
+            }
+          ]
         },
         // -----------------------------------------------------------------------------------------------------
         {
           test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
           use: 'file-loader?name=fonts/[name].[hash].[ext]?'
+
         }
       ]
     },
