@@ -12,15 +12,36 @@ body {
     flex: 0 1 auto;
     align-self: auto;
     font-size: 2em;
+    max-width: 90vw;
+
+    h2 {
+      font-size: 1.3em;
+    }
 
     a {
-      color: rgba(66, 134, 244, .8);
+      color: #FCE033;
       transition: all .3s;
+      padding: 5px 0;
+      background: #000;
+      margin-top: 10px;
+      display: block;
 
       &:hover {
-        background: rgba(66, 134, 244, 100);
-        color: #fff;
+        background: #FCE033;
+        color: #000;
       }
+    }
+
+    @media(max-width: 600px) {
+        h2 {
+          font-size: .8em;
+        }
+        a {
+          font-size: .7em;
+        }
+        .logo {
+          width: 50%;
+        }
     }
   }
 }

@@ -33,7 +33,8 @@ module.exports = function () {
         components:   path.resolve('./src/components'),
         template:     path.resolve('./src/components/shared/template'),
         shared:       path.resolve('./src/components/shared'),
-        images:       path.resolve('./public/img')
+        images:       path.resolve('./public/img'),
+        vendor:       path.resolve('./src/vendor')
       }
     },
 
