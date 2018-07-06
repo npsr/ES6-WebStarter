@@ -1,0 +1,12 @@
+.page {
+  margin-top: 10vw;
+  font-size: 2em;
+  animation: blinker 1s linear infinite;
+
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
