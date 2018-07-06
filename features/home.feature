@@ -1,4 +1,4 @@
-Feature: GFT - cv finder
+Feature: Home page
   Scenario:
     Given:
     When:
