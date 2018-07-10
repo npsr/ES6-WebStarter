@@ -4,6 +4,21 @@
   animation: blinker 1s linear infinite;
 
 }
+.features {
+  ul {
+    margin-top: 1em;
+    display: block;
+
+    li {
+      padding: 10px;
+
+      &:before {
+        content: '- ';
+        font-weight: 100;
+      }
+    }
+  }
+}
 
 @keyframes blinker {
   50% {
