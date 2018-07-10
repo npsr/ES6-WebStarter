@@ -1,5 +1,6 @@
 @import 'reset';
 
+/* variable webfont */
 @font-face {
   font-family: 'gingham';
   src:
@@ -9,14 +10,17 @@
   font-weight: 100 900;
 }
 
+/* use variable webfont or system font */
 body {
   text-align: center;
   font-weight: 250;
-  font-family: 'gingham', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'gingham',
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 500;
   margin-left: .2em;
   font-size: 1.1em;
 }
