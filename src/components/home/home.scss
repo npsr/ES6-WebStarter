@@ -20,15 +20,34 @@ body {
 
     a {
       color: #FCE033;
-      transition: all .3s;
+      transition: all .6s;
       padding: 5px 0 10px 0;
       background: #000;
       margin-top: 10px;
       display: block;
+      border-radius: 5px;
+
+      background: url('data:image/svg+xml,\
+        <svg xmlns ="http://www.w3.org/2000/svg">\
+        <style>@keyframes marching-ants {to {stroke-dashoffset: -15px;}}</style>\
+        <rect width="100%" height="100%" style="stroke: #FCE033; stroke-width: 3px; fill: none;\
+        fill: #000;\
+        stroke-dasharray: 10px 5px; animation: marching-ants 1.5s infinite linear;" />\
+        </svg>
+      ');
 
       &:hover {
         background: #FCE033;
         color: #000;
+
+        background: url('data:image/svg+xml,\
+          <svg xmlns ="http://www.w3.org/2000/svg">\
+          <style>@keyframes marching-ants {to {stroke-dashoffset: -15px;}}</style>\
+          <rect width="100%" height="100%" style="stroke: #000; stroke-width: 3px; fill: none;\
+          fill: #FCE033;\
+          stroke-dasharray: 10px 5px; animation: marching-ants .9s infinite linear;" />\
+          </svg>
+      ');
       }
     }
 
