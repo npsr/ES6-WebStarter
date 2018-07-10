@@ -1,6 +1,15 @@
 @import 'reset';
 
+@font-face {
+  font-family: 'gingham';
+  src:
+          url('../../../../public/fonts/Gingham.woff2') format('woff2'),
+          url('../../../../public/fonts/Gingham.woff') format('font-woff'),
+          url('../../../../public/fonts/Gingham.ttf')  format('truetype');
+}
+
 body {
   text-align: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 140;
+  font-family: 'gingham', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }

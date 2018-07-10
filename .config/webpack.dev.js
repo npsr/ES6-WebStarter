@@ -75,21 +75,8 @@ module.exports = function () {
         },
         // -----------------------------------------------------------------------------------------------------
         {
-          test: /\.(jpg|png|gif)$/,
-          include : path.join(__dirname, 'app'),
-          use: ['file-loader',
-            {
-                loader: 'image-webpack-loader',
-                options: {
-                    disable: true,
-                },
-            }
-          ]
-        },
-        // -----------------------------------------------------------------------------------------------------
-        {
           test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-          use: 'file-loader?name=fonts/[name].[hash].[ext]?'
+          use: 'file-loader?name=[name].[hash].[ext]?'
 
         }
       ]
