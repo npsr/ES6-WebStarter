@@ -5,7 +5,7 @@ pure VanillaJS 6th edition apps.
 ### RECOMMENDED WAY
 - use Yarn instead of NPM
 - type `yarn` in the console
-- run it :) Just type `cd ./bin && dev.sh`
+- run it :) Just type `cd ./bin && ./dev.sh`
 
 ### NPM WAY
 - `npm install`
