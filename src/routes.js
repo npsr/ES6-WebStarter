@@ -1,18 +1,20 @@
 import Aviator  from 'aviator';
-import Home     from './components/home/home.class.js';
-import Page     from './components/page/page.class.js';
+import Home     from './components/home/home.class';
+import Page     from './components/page/page.class';
 
 class Routes {
   constructor() {
     Aviator.setRoutes({
+      // -----------------------------------------------------------------------
       '/': {
         target: Home,
-        '/': 'welcome'
+        '/': 'welcome',
       },
+      // -----------------------------------------------------------------------
       '/page': {
         target: Page,
-        '/': 'welcome'
-      }
+        '/': 'welcome',
+      },
     });
 
     Aviator.dispatch();

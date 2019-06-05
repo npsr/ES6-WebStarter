@@ -5,7 +5,7 @@ import styles   from './page.scss';
 
 class Page {
   static welcome() {
-    console.log('Page:welcome');
+    console.log('Page::welcome');
     Helpers.addHTML('#root', tpl);
     Helpers.addCSS(styles);
   }

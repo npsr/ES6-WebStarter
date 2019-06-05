@@ -1,6 +1,6 @@
 {
   "name": "ES6webstarter",
-  "version": "0.0.2-alpha4",
+  "version": "0.0.3-alpha5",
   "description": "Just another starter pack for Pure ES6",
   "main": "index.js",
   "repository": "",
@@ -10,17 +10,28 @@
     "dev": "NODE_ENV='dev' webpack-dev-server --colors"
   },
   "devDependencies": {
+    "@babel/preset-flow": "^7.0.0",
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
+    "babel-preset-flow": "^6.23.0",
     "css-loader": "^0.28.7",
     "eslint": "^4.17.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-loader": "^1.9.0",
+    "eslint-plugin-flowtype": "^3.9.1",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
     "file-loader": "^1.1.11",
+    "flow-babel-webpack-plugin": "^1.1.1",
+    "flow-bin": "^0.100.0",
     "html-webpack-plugin": "^2.30.1",
     "image-webpack-loader": "^4.3.1",
-    "node-sass": "^4.5.3",
+    "node-sass": "^4.12.0",
     "pug": "^2.0.0-rc.4",
     "pug-html-loader": "^1.1.5",
     "raw-loader": "^0.5.1",
@@ -31,6 +42,7 @@
     "webpack-dev-server": "^2.9.1"
   },
   "dependencies": {
-    "aviator": "^0.6.6"
+    "aviator": "^0.6.6",
+    "rxjs": "^6.5.2"
   }
 }

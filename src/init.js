@@ -1,11 +1,12 @@
 import Helpers  from 'shared/helpers';
-import Pack     from '../package.json';
-import Routes   from './routes.js';
-
 import templateCSS from 'template/styles.scss';
+import Pack     from '../package.json';
+import Routes   from './routes';
+
 
 Helpers.addCSS(templateCSS);
 
-new Routes();
+const routes = new Routes();
+routes();
 
-console.info('Welcome to ' + Pack.name + ', version:' + Pack.version);
+console.info(`Welcome to ${Pack.name}, version:${Pack.version}`);
