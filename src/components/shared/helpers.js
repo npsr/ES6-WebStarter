@@ -25,7 +25,7 @@ class Helpers {
   // ---------------------------------------------------------------------------
   static addIMG(target: string, src: string) {
     fromEvent(document, 'DOMContentLoaded').subscribe(() => {
-      const img = document.querySelector(`img ${target}`);
+      const img = document.querySelector(target);
       if (img) img.setAttribute('src', src);
     });
   }
