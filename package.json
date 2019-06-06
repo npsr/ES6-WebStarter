@@ -4,7 +4,7 @@
   "description": "Just another starter pack for Pure ES6",
   "main": "index.js",
   "repository": "",
-  "author": "Luke Samorodny",
+  "author": "Luke Samorodny <luke.samorodny@gmail.com>",
   "license": "MIT",
   "scripts": {
     "dev": "NODE_ENV='dev' webpack-dev-server --colors"
