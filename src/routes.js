@@ -3,7 +3,7 @@ import Home     from './components/home/home.class';
 import Page     from './components/page/page.class';
 
 class Routes {
-  constructor() {
+  static dispatch() {
     Aviator.setRoutes({
       // -----------------------------------------------------------------------
       '/': {

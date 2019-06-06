@@ -6,7 +6,5 @@ import Routes   from './routes';
 
 Helpers.addCSS(templateCSS);
 
-const routes = new Routes();
-routes();
-
+Routes.dispatch();
 console.info(`Welcome to ${Pack.name}, version:${Pack.version}`);
