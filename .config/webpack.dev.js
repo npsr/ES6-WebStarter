@@ -35,7 +35,9 @@ module.exports = function () {
         template:     path.resolve('./src/components/shared/template'),
         shared:       path.resolve('./src/components/shared'),
         images:       path.resolve('./public/img'),
-        vendor:       path.resolve('./src/vendor')
+        vendor:       path.resolve('./src/vendor'),
+        connectors:   path.resolve('./src/components/connectors'),
+        config:       path.resolve('./.config/env.dev')
       }
     },
 

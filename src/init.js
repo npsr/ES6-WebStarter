@@ -1,8 +1,7 @@
-import Helpers  from 'shared/helpers';
-import templateCSS from 'template/styles.scss';
-import Pack     from '../package.json';
-import Routes   from './routes';
-
+import Helpers      from 'shared/helpers';
+import templateCSS  from 'template/styles.scss';
+import Pack         from '../package.json';
+import Routes       from './routes';
 
 Helpers.addCSS(templateCSS);
 

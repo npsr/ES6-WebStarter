@@ -1,4 +1,4 @@
-class Http {
+class LegacyXhrConnector {
   static get(url, res, err) {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url);
@@ -28,4 +28,4 @@ class Http {
   }
 }
 
-export default Http;
+export default LegacyXhrConnector;
